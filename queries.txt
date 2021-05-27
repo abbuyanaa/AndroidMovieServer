@@ -1,0 +1,20 @@
+// Create
+INSERT INTO `movies`
+(`mid`, `mtitle`, `mdesc`, `release_year`, `duration`, `directors`, `cat_id`, `images`, `created_date`, `updated_date`) VALUES
+()
+
+// Read
+SELECT * FROM `movies` ORDER BY `mid` DESC
+
+// Update
+SELECT m.*, c.cname 
+FROM movies AS m 
+LEFT JOIN category AS c ON m.cat_id = c.cid
+WHERE m.mid = ''
+
+UPDATE `movies` SET `mtitle`=,`mdesc`=,`release_year`=,`duration`=,`directors`=,`cat_id`= WHERE `mid` = ""
+UPDATE `movies` SET `mtitle`=,`mdesc`=,`release_year`=,`duration`=,`directors`=,`cat_id`=,`images`= WHERE `mid` = ""
+
+// Delete
+SELECT `images` FROM `movies` WHERE `mid` = ""
+DELETE FROM `movies` WHERE `mid` = ""
